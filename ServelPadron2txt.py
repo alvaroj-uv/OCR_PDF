@@ -5,8 +5,7 @@ from PIL import Image, ImageDraw, ImageFont
 import easyocr
 import numpy as np
 import time
-from pytesseract import Output
-import cv2
+
 
 
 class OCRHandler:
