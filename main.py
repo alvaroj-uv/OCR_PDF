@@ -1,4 +1,4 @@
-from ServelPadron2txt import ImageHandler,OCRHandler,EasyOCR,PdfHandler,Outputhandler
+from PDFhandling import ImageHandler,OCRHandler,EasyOCR,PdfHandler,Outputhandler
 
 class PdfToFile:
     def __init__(self, inputpdffile, hojas):
