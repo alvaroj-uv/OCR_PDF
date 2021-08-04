@@ -1,2 +1,4 @@
 # OCR_PDF
-Codigo para extraer datos desde un PDF de servel
+Codigo python para extraer datos desde un PDF de servel
+La idea es seguir agregando herencias de clases
+
