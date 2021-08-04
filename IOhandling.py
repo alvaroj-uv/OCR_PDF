@@ -1,6 +1,8 @@
+from OCRhandling import EasyOCR
+
 class Outputhandler:
     def __init__(self):
-        self.filename = 'output.txt'
+        self.filename = './output/output.txt'
         self.file = open(self.filename, "w+", encoding='utf-8')
         pass
 

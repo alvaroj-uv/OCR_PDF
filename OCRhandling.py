@@ -1,3 +1,7 @@
+import pytesseract
+import easyocr
+import numpy as np
+
 class OCRHandler:
     def __init__(self):
         pass

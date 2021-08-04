@@ -1,10 +1,7 @@
 import fitz
-import pytesseract
 import io
-from PIL import Image, ImageDraw, ImageFont
-import easyocr
-import numpy as np
-import time
+from PIL import Image
+
 
 
 class PdfHandler:

@@ -1,11 +1,14 @@
-from PDFhandling import ImageHandler,OCRHandler,EasyOCR,PdfHandler,Outputhandler
+from OCRhandling import EasyOCR,TesseractOCR
+from PDFhandling import PdfHandler
+from IOhandling import Outputhandler
+from Imghandling import ImageHandler
 
 class PdfToFile:
     def __init__(self, inputpdffile, hojas):
         self.pdffile = inputpdffile
         self.numhojas = hojas
         self.imagehandler = ImageHandler()
-        self.OCR = EasyOCR()
+        self.OCR = TesseractOCR()
         self.PDF = PdfHandler(self.pdffile)
         self.File = Outputhandler()
 
@@ -18,5 +21,5 @@ class PdfToFile:
             print('Hoja' + str(hoja))
 
 
-prueba = PdfToFile('A02103.pdf',2)
+prueba = PdfToFile('./input/A02103.pdf',1)
 prueba.process()
